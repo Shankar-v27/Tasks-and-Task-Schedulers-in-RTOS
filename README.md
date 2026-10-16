@@ -1,39 +1,66 @@
-# Tasks and Task Schedulers in Real-Time Operating Systems (RTOS)
-### Interactive ECE & Embedded Systems Educational Learning Platform
+# RTOS Academy — Interactive Engineering Learning Platform
+### Tasks and Task Schedulers in Real-Time Operating Systems
 
-An interactive, university-accredited educational platform designed for B.E./B.Tech ECE & CSE students, GATE aspirants, and engineers preparing for core embedded systems and firmware interviews.
+An engineering-grade, university-accredited interactive learning platform designed for B.E./B.Tech ECE, CSE, and EEE students, GATE aspirants, and embedded firmware engineers.
+
+[![Platform: Standalone HTML5](https://img.shields.io/badge/Platform-Zero--Dependency%20HTML5-00d4ff)](index.html)
+[![RTOS: ARM Cortex-M](https://img.shields.io/badge/Architecture-ARM%20Cortex--M%20(PendSV%2FSysTick)-6366f1)](index.html)
+[![Algorithms: RMS%20%7C%20EDF%20%7C%20Priority%20%7C%20RR](https://img.shields.io/badge/Algorithms-RMS%20%7C%20EDF%20%7C%20Priority%20%7C%20RR-10b981)](index.html)
 
 ---
 
-## 🌟 Overview & Key Highlights
+## 🌟 The 7 Platform Workspaces
 
-This repository contains a **complete, standalone, zero-dependency interactive learning module** covering:
-- **RTOS Fundamentals**: Concurrency, determinism, Hard vs. Firm vs. Soft real-time systems.
-- **Microscopic Mechanics**: Task Control Blocks (TCB), ARM Cortex-M hardware auto-stacking, dual stack pointers (MSP vs. PSP), and lowest-priority `PendSV` context switching.
-- **Interactive Live Scheduling Simulator**:
-  - Live Gantt chart visualization with execution timelines.
-  - Multi-policy engine: **Rate Monotonic Scheduling (RMS)**, **Earliest Deadline First (EDF)**, **Preemptive Fixed Priority**, and **Round Robin Time Slicing**.
-  - Real-time CPU utilization calculator ($U = \sum C_i / T_i$), hyperperiod (LCM), Liu & Layland bound checks, and deadline miss alerts.
-- **Priority Inversion Remediation**: Detailed study of the 1997 Mars Pathfinder anomaly, Priority Inheritance Protocol (PIP), and Priority Ceiling Protocol (PCP).
-- **Rigorous Mathematical Modeling**: Step-by-step derivations of Liu & Layland bounds, Exact Response Time Analysis (RTA) recurrence relations, and dynamic EDF bounds.
-- **Solved Numerical Problems**: 3 comprehensive, progressive step-by-step problems including context switch overhead and mutex blocking times.
-- **GATE Question Bank**: 10 original multi-choice questions with difficulty tags, automatic scoring, and detailed pedagogical explanations for every option.
-- **Core Industry Interview Preparation**: 10 accordion-style interview questions tailored for roles at Qualcomm, TI, Apple, Bosch, STMicroelectronics, and NXP.
-- **Interactive 10-Question Topic Mastery Quiz**: Complete self-assessment exam with instant scoring and performance feedback.
+RTOS Academy is structured into 7 distinct, cohesive workspaces connected via a zero-lag SPA navigation router:
+
+1. **🚀 Engineering Landing Page**:
+   - Modern hero section with live simulated ARM Cortex-M4 task stream and SysTick/PendSV execution telemetry.
+   - Core feature cards and curriculum roadmap preview.
+2. **📊 Student Dashboard**:
+   - Course progress telemetry (completion %, completed lessons count, GATE accuracy, lab challenges solved).
+   - Prominent "Continue Learning" focal card and categorized curriculum progress tracking.
+   - Recent activity feed logging quiz attempts, simulator runs, and assembly explorations.
+3. **📖 3-Region Lesson Workspace**:
+   - **Left Sidebar**: Expandable curriculum navigation with module breakdown and active lesson indicators.
+   - **Center Canvas**: In-depth explanations, 4-phase ARM Cortex-M hardware auto-stacking diagrams, syntax-highlighted assembly (`PendSV_Handler`), and callout panels.
+   - **Right Sidebar**: On-page TOC navigation, key mathematical formulas ($U = \sum C_i/T_i$), and kernel glossary.
+4. **🔬 Signature Scheduler Lab**:
+   - Interactive dual-track Gantt timeline rendered on high-DPI HTML5 Canvas.
+   - Live scheduler simulation supporting **Rate Monotonic Scheduling (RMS)**, **Earliest Deadline First (EDF)**, **Fixed-Priority Preemptive**, **Round Robin (RR)**, and **First-Come, First-Served (FCFS)**.
+   - Real-time Liu & Layland bound calculation, CPU utilization monitoring, hyperperiod calculation (LCM), and deadline miss detection flags.
+   - Play/Pause, Step Forward, and Reset controls with simulation speed tuning.
+   - Instant preset scenario loaders (`RMS Success` and `RMS Infeasible / EDF Pass`).
+5. **🔄 Task-State Explorer**:
+   - Interactive 5-state lifecycle automaton (Ready, Running, Blocked, Suspended) with vector directional transition paths.
+   - Transition trigger simulator (`Dispatch`, `Preempt`, `vTaskDelay`, `Semaphore Event`).
+   - Deep kernel state inspector displaying RTOS API calls and C-structure pointers (`pxCurrentTCB`).
+6. **🎯 Practice Arena**:
+   - Filterable question bank: **GATE ECE/CS Numericals** and **Qualcomm/TI Firmware Interview Scenarios**.
+   - Instant scoring with detailed mathematical step-by-step derivations and architectural explanations.
+7. **🗺️ Learning Roadmap**:
+   - Visual progression path across 3 mastery stages: Beginner (Core Task Foundations), Intermediate (Schedulers & Context Switching), and Advanced (Real-Time Synchronization & Safety).
+
+---
+
+## ⚡ Keyboard Shortcuts & Quick Actions
+
+- `Ctrl + K` / `Cmd + K`: Open Global Command Palette to search lessons, concepts, and lab presets.
+- `Escape`: Close modals and search overlays.
+- Theme Switcher: Toggle between Dark Engineering Theme and High-Contrast Light Mode with local storage persistence.
 
 ---
 
 ## 🚀 How to Run
 
-The application is completely self-contained in [`index.html`](index.html). It requires **no web server, no Node.js, and no internet connection**.
+The entire platform is completely self-contained in [`index.html`](index.html). It requires **no web server, no Node.js, and no internet connection**.
 
-1. Clone the repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/Shankar-v27/ESIOT.git
    ```
-2. Open [`index.html`](index.html) in any modern browser (Google Chrome, Microsoft Edge, Mozilla Firefox, or Safari):
-   - Simply **double-click** `index.html` from your file manager, or
-   - Right-click and choose **Open With &rarr; Google Chrome / Microsoft Edge**.
+2. Open [`index.html`](index.html) in any modern browser:
+   - Double-click `index.html`, or
+   - Right-click and choose **Open With &rarr; Google Chrome / Microsoft Edge / Firefox / Safari**.
 
 ---
 
@@ -41,19 +68,21 @@ The application is completely self-contained in [`index.html`](index.html). It r
 
 | File | Description |
 | :--- | :--- |
-| [`index.html`](index.html) | The full standalone interactive learning web application (HTML, CSS, JS, SVG, Canvas). |
+| [`index.html`](index.html) | The full standalone single-file RTOS Academy platform (HTML5, Vanilla CSS Design System, Canvas Gantt Engine, Automaton). |
 | [`RTOS_Tasks_and_Task_Schedulers_Master_Prompt.txt`](RTOS_Tasks_and_Task_Schedulers_Master_Prompt.txt) | Specification master prompt covering all course criteria and learning objectives. |
-| [`README.md`](README.md) | Project documentation, setup guide, and module reference. |
+| [`README.md`](README.md) | Platform documentation, architecture overview, and user guide. |
 
 ---
 
 ## 🛠️ Technology Stack
-- **Structure & Content**: Semantic HTML5 with SVG vector schematics.
-- **Design & Styling**: Modern Vanilla CSS design system (Dark & Light mode, Glassmorphism, Print-to-PDF stylesheet).
-- **Simulators & Logic**: Pure Vanilla JavaScript with HTML5 Canvas (Zero external CDN/framework dependencies).
+- **Architecture**: Single Page Application (SPA) with zero external library dependencies.
+- **Styling**: Curated Vanilla CSS Design System with CSS Custom Properties, sleek dark mode (`#070b12`), and high-contrast light mode.
+- **Rendering**: HTML5 Canvas for real-time scheduling Gantt charts, SVG for task-state machines.
+- **Fonts**: System fallback typography stack with monospace formatting for code and timing parameters.
 
 ---
 
-## 👨‍💻 Author & Attribution
+## 👨‍💻 Repository & Attribution
 - **Repository**: [https://github.com/Shankar-v27/ESIOT](https://github.com/Shankar-v27/ESIOT)
-- **Target Curriculum**: B.E. / B.Tech Embedded Systems and IoT (ESIOT), RTOS, and GATE Examination Syllabus.
+- **Target Audience**: B.E./B.Tech ECE, CSE & EEE students, GATE aspirants, and embedded software developers.
+
