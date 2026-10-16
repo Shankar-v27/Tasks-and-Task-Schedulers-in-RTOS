@@ -1,0 +1,291 @@
+Project Title :Tasks and Task Schedulers in RTOS
+
+# MASTER PROMPT: Interactive Embedded Systems Learning Website Generator 
+ 
+Act as an expert Embedded Systems and Real-Time Operating Systems (RTOS) professor, GATE coaching instructor, firmware engineer, and embedded/core electronics company interview mentor. 
+ 
+Create a **complete, professional, interactive, standalone HTML learning webpage** for
+the following project topic. 
+ 
+**Topic details** 
+Subject: Embedded Systems and Real-Time Operating Systems (RTOS)
+Unit: RTOS Fundamentals, Tasks, Scheduling, and Context Switching
+Topic: Tasks and Task Schedulers in RTOS
+Academic level: B.E./B.Tech ECE 
+Target audience: College students, GATE aspirants, and candidates preparing for core
+electronics company interviews. 
+Simulation software: [Multisim]
+Simulation screenshot: [Use the attached image if provided] 
+ 
+## 1. General HTML requirements 
+ 
+Generate a complete, ready-to-run HTML file containing HTML, CSS, and JavaScript in a
+single file. 
+ 
+Requirements: 
+Professional engineering education website design. 
+Responsive layout for desktop, tablet, and mobile. 
+Attractive header containing the subject, unit, project title, and learning objectives. 
+Navigation menu with links to all major sections. 
+Consistent typography, readable equations, tables, task-state diagrams, scheduling timelines, and timing illustrations. 
+Use CSS and JavaScript embedded within the HTML. 
+No external libraries, internet connection, or web server should be required. 
+Include print-friendly CSS so students can print the page or save it as PDF. 
+Ensure all interactive features work correctly. 
+Use appropriate technical terminology and verify equations, units, numerical calculations,
+and answer keys. 
+Generate the actual HTML file and provide a working download link, rather than only
+displaying the source code. 
+ 
+## 2. Topic introduction and learning objectives 
+ 
+Include: 
+Definition and introduction. 
+Fundamental operating principle of RTOS tasks and scheduling. 
+Importance of the topic in electronics engineering. 
+Learning objectives. 
+Prerequisite concepts. 
+Important terminology and definitions. 
+
+Classification or types, where applicable. 
+ 
+## 3. Circuit diagram or technical diagram 
+ 
+Create a clear, properly labelled diagram relevant to the selected topic. 
+ 
+For the RTOS topic:
+Show the complete circuit with component names, values where appropriate, supply
+voltage, input, output, ground, and component connections. 
+Explain the function of each component. 
+Use an accurate SVG or CSS-generated circuit illustration when practical. 
+Ensure the diagram is readable and technically consistent with the equations and
+explanations. 
+ 
+For digital electronics, VLSI, FPGA, embedded systems, communication systems, or other
+topics: 
+Replace the circuit with the appropriate block diagram, logic diagram, timing diagram,
+architecture diagram, or system schematic. 
+ 
+Include a component/function table wherever applicable. 
+ 
+## 4. Working principle and detailed explanation 
+ 
+Explain the topic step by step in student-friendly language. 
+ 
+Include: 
+RTOS task lifecycle and scheduler operation. 
+Important operating conditions. 
+Input-to-output signal flow. 
+Role of each task state, kernel service, and scheduler block. 
+Relevant operating modes. 
+Important assumptions and approximations. 
+Advantages, limitations, and practical RTOS design considerations. 
+Common student misconceptions. 
+ 
+For RTOS topics, explain task states, scheduling decisions, and timing behaviour separately where helpful. 
+ 
+## 5. Waveforms and simulation output 
+ 
+Include appropriate visual representations such as: 
+Input and output waveforms. 
+Task execution and preemption timelines.
+Task-state and scheduler timing diagrams.
+Timing diagrams. 
+CPU utilisation and response-time plots.
+Transfer characteristics. 
+Relevant operating-point or performance plots. 
+
+ 
+Choose only the visuals relevant to the topic. 
+ 
+If I attach a simulation screenshot: 
+Embed the actual uploaded image directly inside the HTML file. 
+Preserve the screenshot without altering its technical content. 
+Add a descriptive title and figure caption. 
+Explain the observed waveforms, circuit behaviour, and important measurements. 
+Relate the simulation output to theoretical expectations. 
+Identify discrepancies or likely setup issues only when supported by the image. 
+Do not fabricate simulation results, measurements, or component values. 
+ 
+If no screenshot is attached, create a suitable illustrative diagram or waveform using SVG or
+Canvas and label it clearly as illustrative. 
+ 
+## 6. Mathematical equations and derivations 
+ 
+Include all important equations and scheduling calculations required for tasks and task schedulers in RTOS. 
+ 
+For every major equation or scheduling metric: 
+Define each variable and its unit. 
+Explain when the equation is applicable. 
+Show the derivation step by step when educationally appropriate. 
+State relevant assumptions and approximations. 
+Include important limiting cases. 
+Explain the physical meaning of the result. 
+ 
+Where applicable, include: 
+Fundamental equations. 
+Biasing and operating-point equations. 
+Gain and transfer-function equations. 
+Frequency-response equations. 
+Power and efficiency equations. 
+Decibel conversions. 
+Design equations and relevant boundary conditions. 
+ 
+Use readable mathematical formatting and properly formatted subscripts, superscripts,
+Greek symbols, and units. 
+ 
+## 7. Solved numerical problems 
+ 
+Provide at least three solved RTOS scheduling examples of increasing difficulty, where applicable. 
+ 
+For each problem: 
+State the question and given values. 
+2. Identify the required quantity. 
+3. Select the appropriate formula. 
+
+4. Substitute values with units. 
+5. Calculate the result step by step. 
+6. Present the final answer clearly. 
+7. Explain the engineering interpretation. 
+ 
+Include at least one GATE-style numerical problem and useful shortcuts when
+mathematically valid. 
+ 
+Do not invent irrelevant numerical examples for topics that are primarily conceptual; adapt
+this section appropriately. 
+ 
+## 8. GATE examination preparation 
+ 
+Create a dedicated section containing at least 10 original GATE-style multiple-choice
+questions relevant to RTOS tasks and scheduling. 
+ 
+Cover: 
+Fundamental concepts. 
+Formula-based problems. 
+Numerical calculations. 
+Conceptual traps. 
+Higher-difficulty applications. 
+Frequently tested concepts and important subtopics. 
+ 
+For every question: 
+Provide four answer choices. 
+Identify the correct answer. 
+Explain why it is correct. 
+Explain common mistakes or why the distractors are incorrect when useful. 
+Include numerical solutions where required. 
+ 
+Label the questions by difficulty: Easy, Moderate, or Difficult. 
+ 
+Include a separate interactive GATE quiz with automatic scoring, answer explanations, and a
+reset option. 
+ 
+Do not claim that original questions are actual previous-year GATE questions. If verified
+previous-year questions are explicitly supplied, label those separately and preserve their
+source attribution. 
+ 
+## 9. Core electronics company interview preparation 
+ 
+Include at least 10 technical interview questions with expandable answers. 
+ 
+Tailor them to the selected topic and relevant roles, such as: 
+Analog design. 
+Digital design. 
+
+VLSI design and verification. 
+Embedded systems and firmware. 
+Hardware testing and validation. 
+Semiconductor testing. 
+FPGA design. 
+Electronics R&amp;D. 
+ 
+Include a mixture of: 
+Fundamental questions. 
+Why/how questions. 
+Design and troubleshooting scenarios. 
+Practical laboratory questions. 
+Simulation-based questions. 
+Debugging questions. 
+Follow-up questions that interviewers may ask. 
+ 
+Answers should be technically accurate, concise, and suitable for interviews at
+semiconductor, embedded systems, electronics design, and hardware validation
+companies. 
+ 
+Add a practical industry perspective explaining how the topic is used in real engineering
+projects. 
+ 
+## 10. Applications and industry relevance 
+ 
+Include: 
+Practical applications. 
+Real-world examples. 
+Where the topic appears in commercial electronic systems. 
+Relevant industry design considerations. 
+Advantages and limitations. 
+Common implementation or testing challenges. 
+Possible career or job-role relevance. 
+ 
+Adapt this section to the selected topic rather than using generic applications. 
+ 
+## 11. Interactive 10-question topic quiz 
+ 
+Create a functional quiz with exactly 10 multiple-choice questions. 
+ 
+Requirements: 
+Four choices per question. 
+One correct answer per question unless explicitly identified otherwise. 
+Radio-button selection. 
+A Check Answers button. 
+Automatic score calculation out of 10 and percentage. 
+Immediate feedback after submission. 
+
+A clear explanation below every question. 
+Distinguish correct, incorrect, and unanswered questions. 
+A Reset Quiz button. 
+Allow users to change answers and attempt the quiz again. 
+ 
+Ensure the JavaScript scoring logic uses the correct answer key and handles unanswered
+questions properly. 
+ 
+## 12. Additional revision materials 
+ 
+Include: 
+Formula sheet. 
+Important definitions. 
+High-priority GATE concepts. 
+Commonly asked interview points. 
+Quick revision notes. 
+Advantages and disadvantages. 
+Comparison tables with related concepts. 
+Common errors and troubleshooting tips. 
+Memory aids or shortcuts when useful. 
+ 
+Use clear tables, lists, and highlighted key points. 
+ 
+## 13. Technical validation and quality checks 
+ 
+Before generating the final file: 
+Check that all diagrams and component connections are consistent with the explanation. 
+Verify equations and numerical examples. 
+Check time units, task priorities, release times, execution times, deadlines, preemption assumptions, and scheduling overhead.
+Verify all quiz answers and scoring logic. 
+Ensure every navigation link points to an existing section. 
+Ensure all buttons and expandable answers work. 
+Embed any provided screenshot within the HTML using a self-contained method. 
+Avoid broken image links, missing sections, placeholder content, and unsupported claims. 
+Ensure the file works offline in a modern browser. 
+ 
+## 14. Final deliverables 
+ 
+Provide: 
+A downloadable, standalone HTML file. 
+2. A concise list of the included sections. 
+3. Instructions for opening the file in Chrome or Edge. 
+4. Confirmation that the provided RTOS/scheduler simulation screenshot, if any, is embedded in the file. 
+5. A clear statement of any limitations or assumptions. 
+ 
+**Important:** Do not stop at a plan or a partial code snippet. Generate the complete
+HTML file, check that it exists, and provide its working download link. 
+
+ 
+Now generate the learning webpage using the project details provided at the beginning of this prompt. Keep the focus on **Tasks and Task Schedulers in RTOS** throughout; do not retain low-pass-filter or analog operational-amplifier content.
